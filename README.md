@@ -1,6 +1,7 @@
 # Finance Tracker App
 ![Static Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Static Badge](https://img.shields.io/badge/python-3.11-blue.svg)
+[![CI](https://github.com/Tanvir-Singh-Sodhi/finance-tracker/actions/workflows/ci.yml/badge.svg)](https://github.com/Tanvir-Singh-Sodhi/finance-tracker/actions/workflows/ci.yml)
 
 
 A personal finances tracker app for multiple accounts with support for categorisation, recurring transactions, and simple forecasting. FASTAPI + React + PostgreSQL.
