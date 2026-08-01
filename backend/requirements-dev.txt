@@ -1,0 +1,7 @@
+black==26.5.1
+pre_commit==4.6.1
+pytest==9.1.1
+ruff==0.16.1
+httpx==0.28.1
+httpx2==2.9.1
+
