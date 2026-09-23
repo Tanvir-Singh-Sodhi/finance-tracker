@@ -1,8 +1,6 @@
-# this is where i expect to make the final ERD to sqlA conversion
-# going to work on 'Account' table
-
 import enum
 
+from database import base
 from sqlalchemy import (
     Boolean,
     Column,
@@ -12,18 +10,9 @@ from sqlalchemy import (
     Integer,
     Numeric,
     String,
-    create_engine,
 )
-from sqlalchemy.orm import declarative_base
-
-# using sqlite to create a local db file
-db_url = "sqlite:///./finance.db"
-
-engine = create_engine(db_url)
-base = declarative_base()
 
 
-# now we can actually make a table called 'Account'
 class AccountType(enum.Enum):
     CURRENT = "current"
     SAVINGS = "savings"
@@ -66,6 +55,3 @@ class Transaction(base):
     date = Column(DateTime, nullable=False)
     description = Column(String)
     amount = Column(Numeric, nullable=False)
-
-
-base.metadata.create_all(engine)
