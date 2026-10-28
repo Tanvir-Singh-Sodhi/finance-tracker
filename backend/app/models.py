@@ -1,6 +1,5 @@
 import enum
 
-from database import base
 from sqlalchemy import (
     Boolean,
     Column,
@@ -11,6 +10,8 @@ from sqlalchemy import (
     Numeric,
     String,
 )
+
+from app.database import base
 
 
 class AccountType(enum.Enum):
